@@ -25,6 +25,11 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto 60px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 80px;
+  background-color: #fff;
 }
 .filter-item {
   padding: 10px 20px;

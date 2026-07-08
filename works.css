@@ -1,0 +1,153 @@
+.title-banner {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: clamp(32px, 3.6vw, 70px);
+  font-weight: bold;
+  background: url(img/title-banner.jpg) center/cover no-repeat;
+}
+.title-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Filters */
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+.filter-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 300;
+}
+.filter-item:hover {
+  color: var(--point);
+}
+.filter-item.active {
+  color: var(--point);
+  font-weight: 500;
+}
+.filter-item::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+.filter-item.active::before {
+  background-color: var(--point);
+}
+
+@media (max-width: 768px) {
+  .title-banner {
+    height: 150px;
+  }
+  .filter {
+    flex-wrap: wrap;
+  }
+  .filter-item {
+    padding: 6px 12px;
+  }
+}
+
+.works-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.works-item {
+  width: calc((100% - 40px) / 3);
+  margin-bottom: 40px;
+}
+
+.works-img {
+  aspect-ratio: 1;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+.works-img img {
+  object-fit: contain;
+}
+.works-txt {
+  text-align: center;
+}
+.works-txt h5 {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.works-txt h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.works-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.works-overlay:hover {
+  opacity: 1;
+}
+.works-btn {
+  padding: 12px 24px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 99px;
+  font-weight: bold;
+}
+
+.primary-btn-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  margin-top: 0;
+  justify-content: center;
+  align-items: end;
+}
+.primary-btn-l {
+  background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .works-item {
+    width: calc((100% - 40px) / 2);
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .works-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

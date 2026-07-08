@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이재혁_Web Design Portfolio</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- GSAP + Scroll Trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="works.css" />
+    <script src="project.js"></script>
+    <script src="common.js"></script>
+    <script src="works.js"></script>
+  </head>
+
+  <body class="works">
+    <!-- Fixed Top -->
+    <div class="fixed-top">
+      <div class="arrow-btn"><img src="img/arrow.png" alt="" /></div>
+    </div>
+
+    <a href="index.html" class="link-btn">
+      <span>H</span>
+      <span>O</span>
+      <span>M</span>
+      <span>E</span>
+      <span class="btn-arrow">
+        <img
+          src="https://ecimg.cafe24img.com/pg3060b72098250045/teamctrls/img/arrow.png"
+          alt="arrow"
+        />
+      </span>
+    </a>
+    <div class="detail-pop">
+      <div class="loading"><span>Loading</span></div>
+      <div class="detail-box">
+        <div class="x-btn"></div>
+        <img src="" alt="detail" />
+      </div>
+    </div>
+
+    <div class="title-banner"><span>ALL WORKS</span></div>
+    <section class="section all-works">
+      <div class="container">
+        <div class="filter">
+          <div class="filter-item active" data-cate="all">전체</div>
+          <div class="filter-item" data-cate="website">웹사이트</div>
+          <div class="filter-item" data-cate="detail">상세페이지</div>
+          <div class="filter-item" data-cate="banner">배너</div>
+          <div class="filter-item" data-cate="poster">포스터</div>
+          <div class="filter-item" data-cate="etc">기타</div>
+        </div>
+        <div class="works-grid">
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup1.png" alt="" />
+              <div class="primary-btn-group">
+                <div
+                  class="primary-btn-l design-item popup-btn"
+                  data-detail="img/proposal1.jpg"
+                >
+                  PROPOSAL
+                </div>
+                <a
+                  href="https://www.figma.com/proto/5xYQhb9hXpnaIhUIpHSLOe/%EC%9D%B4%EC%9E%AC%ED%98%81_%ED%94%BC%EA%B7%B8%EB%A7%88?node-id=1788-653&viewport=362%2C-5293%2C0.12&t=A7FUuVavWa0v6B0R-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1788%3A653&page-id=37%3A886"
+                  target="_blank"
+                  class="primary-btn-m"
+                  >PROTOTYPE</a
+                >
+                <a
+                  href="https://starship-re.netlify.app"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>WEBSITE REDESIGN · SOLO</h5>
+              <h4>스타쉽 엔터테인먼트</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup2.png" alt="" />
+              <div class="primary-btn-group">
+                <div
+                  class="primary-btn-l design-item popup-btn"
+                  data-detail="img/proposal2.jpg"
+                >
+                  PROPOSAL
+                </div>
+                <a
+                  href="https://www.figma.com/proto/5xYQhb9hXpnaIhUIpHSLOe/%EC%9D%B4%EC%9E%AC%ED%98%81_%ED%94%BC%EA%B7%B8%EB%A7%88?node-id=2703-16631&viewport=-2730%2C615%2C0.09&t=AJ34YsHdXp5IX8z7-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2703%3A16631&page-id=37%3A509"
+                  target="_blank"
+                  class="primary-btn-m"
+                  >PROTOTYPE</a
+                >
+                <a
+                  href="https://inni-re.netlify.app"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>WEBSITE REDESIGN · SOLO</h5>
+              <h4>이니스프리</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup3.png" alt="" />
+              <div class="primary-btn-group">
+                <div
+                  class="primary-btn-l design-item popup-btn"
+                  data-detail="img/proposal3.png"
+                >
+                  PROPOSAL
+                </div>
+                <a
+                  href="https://www.figma.com/proto/5xYQhb9hXpnaIhUIpHSLOe/%EC%9D%B4%EC%9E%AC%ED%98%81_%ED%94%BC%EA%B7%B8%EB%A7%88?node-id=2720-19116&viewport=-2055%2C-567%2C0.16&t=SBgJa7PkHBST6KhA-1&scaling=min-zoom&content-scaling=fixed&page-id=335%3A2095"
+                  target="_blank"
+                  class="primary-btn-m"
+                  >PROTOTYPE</a
+                >
+                <a
+                  href="https://converse-re.netlify.app"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>WEBSITE REDESIGN · SOLO</h5>
+              <h4>Converse Korea</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup4.png" alt="" />
+              <div class="primary-btn-group">
+                <div
+                  class="primary-btn-l design-item popup-btn"
+                  data-detail="img/proposal4.jpg"
+                >
+                  PROPOSAL
+                </div>
+                <a
+                  href="https://www.figma.com/proto/5xYQhb9hXpnaIhUIpHSLOe/%EC%9D%B4%EC%9E%AC%ED%98%81_%ED%94%BC%EA%B7%B8%EB%A7%88?node-id=2468-9272&viewport=-229%2C153%2C0.12&t=S71LWTk7Fao3eMfx-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2468%3A9272&page-id=103%3A1518"
+                  target="_blank"
+                  class="primary-btn-m"
+                  >PROTOTYPE</a
+                >
+                <a
+                  href="https://ishas02.cafe24.com"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>WEBSITE REDESIGN · SOLO</h5>
+              <h4>두드림에듀</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup5.png" alt="" />
+              <div class="primary-btn-group">
+                <a
+                  href="https://www.figma.com/deck/ad0m0fqIXMfsu4d4w3Rnqg/%EC%BB%A8%ED%8A%B8%EB%A1%A4%EC%97%90%EC%8A%A4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B8%B0%ED%9A%8D%EC%84%9C?node-id=7-2&viewport=-148%2C-1078%2C0.72&t=Cva72qn40TBniOAc-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                  target="_blank"
+                  class="primary-btn-l design-item"
+                >
+                  PRESENTATION
+                </a>
+                <a
+                  href="https://www.figma.com/proto/Ngvj1rCMVaH9YFTZlyG8W9/%EC%BB%A8%ED%8A%B8%EB%A1%A4%EC%97%90%EC%8A%A4_De-Longhi?node-id=1020-16627&viewport=2054%2C-907%2C0.3&t=2Vdkam07UCAm6qBx-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1020%3A16627&page-id=1%3A3"
+                  target="_blank"
+                  class="primary-btn-m"
+                  >PROTOTYPE</a
+                >
+                <a
+                  href="https://teamctrls.cafe24.com/"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>WEBSITE REDESIGN · TEAM</h5>
+              <h4>De'Longhi Korea</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup9.png" alt="" />
+              <div class="primary-btn-group">
+                <a
+                  href="https://nlclee.github.io/epics-re/"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>CLIENT WORKS · DEVELOPMENT</h5>
+              <h4>에픽스 디자인 포트폴리오 사이트 구현</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup6.png" alt="" />
+              <div class="primary-btn-group">
+                <a
+                  href="https://www.riocnt.co.kr/ingredients"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>CLIENT WORKS · DEVELOPMENT</h5>
+              <h4>RIO C&T 제품 리스트 페이지 개발 및 동적 렌더링 구현</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup7.png" alt="" />
+              <div class="primary-btn-group">
+                <a
+                  href="https://vanserve.mycafe24.com/index.html"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>CLIENT WORKS · DEVELOPMENT</h5>
+              <h4>VANSERVE 차량 견적 계산 기능 개선</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="works-item website">
+            <div class="works-img">
+              <img src="img/mockup8.png" alt="" />
+              <div class="primary-btn-group">
+                <a
+                  href="https://www.jangansystem.com/"
+                  target="_blank"
+                  class="primary-btn-b"
+                  >WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="works-txt">
+              <h5>CLIENT WORKS · CONTENTS DESIGN</h5>
+              <h4>장안시스템 컨텐츠 디자인</h4>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

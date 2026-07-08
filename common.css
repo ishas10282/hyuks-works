@@ -1,0 +1,396 @@
+/* Pretendard */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+/*
+   font-family: "Pretendard Variable", sans-serif;
+    */
+/* Playfair */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+/*
+ font-family: "Playfair", serif;
+*/
+
+:root {
+	--line: #aaa;
+	--point: #ff6b35;
+	/* --point: #1d6ae6; */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+	list-style: none;
+	font-family: "Pretendard Variable", sans-serif;
+}
+
+a {
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: "Pretendard Variable", sans-serif;
+	scroll-behavior: smooth;
+}
+
+.link-btn {
+	position: fixed;
+	right: 0;
+	top: 27%;
+	padding: 10px 16px;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: var(--point);
+	/* border-bottom: 1px solid var(--point); */
+	transform: translate(0%, -50%);
+	color: #fff;
+	cursor: pointer;
+	z-index: 999;
+	display: flex;
+	gap: 0;
+	border-radius: 20px 0 0 20px;
+}
+.link-btn .btn-arrow {
+	margin-left: 10px;
+}
+.link-btn .btn-arrow img {
+	object-fit: contain;
+}
+
+.link-btn:hover span {
+	display: inline-block;
+	animation: wave 1.6s infinite;
+}
+@keyframes wave {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	20% {
+		transform: translateY(-4px);
+	}
+	60% {
+		transform: translateY(4px);
+	}
+}
+.link-btn span:nth-child(2) {
+	animation-delay: 0.05s;
+}
+.link-btn span:nth-child(3) {
+	animation-delay: 0.1s;
+}
+.link-btn span:nth-child(4) {
+	animation-delay: 0.15s;
+}
+.link-btn span:nth-child(5) {
+	animation-delay: 0.2s;
+}
+.link-btn span:nth-child(6) {
+	animation-delay: 0.25s;
+}
+.link-btn span:nth-child(7) {
+	animation-delay: 0.3s;
+}
+.link-btn span:nth-child(8) {
+	animation-delay: 0.35s;
+}
+.link-btn span:nth-child(9) {
+	animation-delay: 0.4s;
+}
+
+@media (max-width: 768px) {
+	.link-btn {
+		top: 20%;
+	}
+}
+
+/* 탑버튼 */
+.fixed-top {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 999;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	transform: translateY(15px);
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+.fixed-top.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+.works .fixed-top {
+	right: 35px;
+}
+.arrow-btn {
+	width: 60%;
+	height: 60%;
+}
+.arrow-btn img {
+	object-fit: contain;
+}
+
+/* 메인 타이틀 */
+h1 {
+	font-size: clamp(24px, 4vw, 59px);
+	color: #333;
+	font-weight: 700;
+	width: 100%;
+	text-align: left;
+}
+/* 서브타이틀 */
+h2 {
+	font-size: clamp(24px, 4vw, 80px);
+	color: #333;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: clamp(16px, 2vw, 24px);
+	color: #999;
+	font-weight: 700;
+	font-family: "Playfair", serif;
+}
+
+/* 본문 타이틀 */
+h4 {
+	font-size: clamp(16px, 1vw, 18px);
+	font-weight: 600;
+	color: #333;
+}
+
+h5 {
+	font-size: 16px;
+	font-weight: 500;
+	color: #333;
+}
+/* 본문 */
+p {
+	color: #666;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+span {
+	font-family: inherit;
+}
+span.light {
+	font-weight: 300;
+}
+
+/* 색상 하이라이트 */
+span.hl {
+	color: #fff;
+	font-weight: 500;
+}
+span.hl-b {
+	color: var(--point);
+}
+
+/* 반전 섹션 배경색 */
+section.invert {
+	background-color: #111;
+}
+
+/* 색상반전 메인 타이틀 */
+.invert h1,
+.invert h2,
+.invert h4,
+.invert h5 {
+	color: #fff;
+}
+/* 색상반전 서브타이틀 */
+.invert h3 {
+	color: #aaa;
+}
+/* 색상반전 본문 */
+.invert p {
+	color: #aaa;
+}
+
+/* Container Default */
+.section {
+	padding: 120px 0;
+	overflow-x: clip;
+}
+#home {
+	padding: 0;
+}
+.section-title {
+	max-width: 1440px;
+	width: 90%;
+	margin: 0 auto 100px;
+	text-align: left;
+}
+#about .section-title {
+	text-align: center;
+}
+.container {
+	max-width: 1440px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+	.section-title {
+		margin: 0 auto 40px;
+	}
+	.section {
+		padding: 80px 0;
+	}
+}
+
+/* Animation Lines */
+.line-h {
+	width: 100%;
+	height: 1px;
+	background: var(--line);
+}
+
+.line-v {
+	width: 1px;
+	height: 100%;
+	background: var(--line);
+}
+
+/* Primary Button Default */
+.primary-btn-l,
+.primary-btn-m,
+.primary-btn-b {
+	padding: 8px 16px;
+	font-size: clamp(14px, 1vw, 16px);
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-radius: 999px;
+}
+.primary-btn-l {
+	color: #333;
+	border: 1px solid #333;
+}
+.primary-btn-m {
+	background-color: #333;
+	color: #fff;
+}
+.primary-btn-b {
+	background-color: var(--point);
+	color: #fff;
+}
+.primary-btn-group {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+.primary-btn-l:hover {
+	border: 1px solid var(--point);
+	background-color: var(--point);
+	color: #fff;
+}
+.primary-btn-m:hover {
+	background-color: var(--point);
+	color: #fff;
+}
+
+.primary-btn-b:hover {
+	background-color: #ff4400;
+	color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	width: 40px;
+	height: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-top: 2px solid #999;
+	border-right: 2px solid #999;
+}
+.swiper-button-prev {
+	left: -50px;
+}
+.swiper-button-next {
+	right: -50px;
+}
+.swiper-button-next::after {
+	transform: rotate(45deg);
+}
+
+.swiper-button-prev::after {
+	transform: rotate(-135deg);
+}
+
+.solo-proj .swiper-pagination-progressbar,
+.dev-proj .swiper-pagination-progressbar {
+	position: relative;
+	background: #ddd;
+	height: 3px;
+	width: calc((100% - 20px) / 2);
+	margin: 0 auto;
+}
+
+.solo-proj .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+.dev-proj .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background: #333;
+}
+
+@media (max-width: 768px) {
+	.solo-proj .swiper-pagination-progressbar,
+	.dev-proj .swiper-pagination-progressbar {
+		width: 100%;
+	}
+	.solo-proj .promotion .swiper-pagination-progressbar,
+	.dev-proj .promotion .swiper-pagination-progressbar {
+		width: calc((100% - 10px) / 1.5);
+		margin: 0 auto;
+	}
+}
+
+.error::after {
+	content: "준비중입니다";
+	background-color: #ff4444;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 999px;
+	font-size: 16px;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s ease;
+}
+
+.error:hover::after {
+	opacity: 1;
+}
